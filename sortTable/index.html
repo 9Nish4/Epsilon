@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        table{
+            border: 1px solid #666666;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+        background-color: #f7f7f7;
+}
+tr:hover{
+    background-color: #f0f6ff;
+}
+ td, th{
+     padding: 15px;
+ }  
+ .headline{
+    background-color: #f2f2f2;
+    color: #666666; 
+    
+ }     
+    </style>
 
+</head>
+<body>
+    <table>
+        <tr class="headline">
+            <th onclick= "sortColumn('name')">Product Name</th>
+            <th onclick= "sortColumn('price')">Price</th>
+            <th onclick= "sortColumn('category')">Category</th>
+        </tr>
+        <tbody id="details">
+
+        </tbody>
+    </table>
+    
+</body>
+<script src="script.js"></script>
+</html>
